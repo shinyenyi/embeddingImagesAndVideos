@@ -1,0 +1,242 @@
+.menuIcon {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+/* Style the search field */
+form.searchForm input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #bbb;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.searchForm button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #bbb;
+    color: black;
+    font-size: 17px;
+    border: 1px solid #bbb;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.searchForm button:hover {
+    background: #bbb;
+}
+
+.searchToolTip,
+.microphoneToolTip,
+.videoToolTip,
+.appsToolTip,
+.notificationsToolTip {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(187, 187, 187, 0.548);
+    color: rgb(54, 53, 53);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin: 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+}
+
+.searchForm {
+    position: relative;
+}
+
+.searchForm:hover .searchToolTip {
+    visibility: visible;
+}
+
+.searchMicrophone {
+    position: relative;
+}
+
+.searchMicrophone:hover .microphoneToolTip {
+    visibility: visible;
+}
+
+.createVideo:hover .videoToolTip {
+    visibility: visible;
+}
+
+.createVideo {
+    position: relative;
+}
+
+.otherApps:hover .appsToolTip {
+    visibility: visible;
+}
+
+.otherApps {
+    position: relative;
+}
+
+.notifications:hover .notificationsToolTip {
+    visibility: visible;
+}
+
+.notifications {
+    position: relative;
+}
+
+/* Clear floats */
+form.searchForm::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+form {
+    display: flex;
+}
+
+.search {
+    margin-right: 5px;
+}
+
+.createVideo,
+.otherApps,
+.notifications {
+    margin-right: 15px;
+}
+
+.menuAndLogo,
+.searchAndMicrophone,
+.navIcons,
+.userAndDetails {
+    display: flex;
+    align-items: center;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(77, 76, 76);
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.videoStats,
+.ownerDetails {
+    width: 658px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(46, 45, 45);
+    padding: 0;
+    justify-content: space-between;
+}
+
+
+.currentVideo {
+    display: flex;
+}
+
+.videoContent {
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-right: 15px;
+    align-items: flex-end;
+    /* align-content: flex-end;
+    align-self: flex-end; */
+    flex: 2;
+}
+
+.sideBar {
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.relatedVideo {
+    display: flex;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.videoImage,
+.videoImageDetails {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.video,
+.videoDetails,
+.videoOwner,
+.ownerDesc,
+.userDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.userDetails {
+    margin-left: 10px;
+}
+
+.user,
+.searchMicrophone {
+    height: 40px;
+    width: 40px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ownerDetails {
+    display: flex;
+    margin: 0;
+}
+
+.ownerDesc {
+    margin-top: 10px;
+}
+
+.videoTitle,
+.videoStats,
+.ownerDetails {
+    margin-top: 15px;
+}
